@@ -6,6 +6,20 @@ bot = Discordrb::Commands::CommandBot.new token: 'NDIxMTcwNjQ0Mjk0ODI4MDM1.DYPy6
 client_id: 421170644294828035,
 prefix:'!'
 
+#!help 
+bot.command :help do |event|
+    event.send_message("-----------------------------------------------------------------------")
+    event.send_message(" コ マ ン ド 一 覧 ")
+    event.send_message("!solo a      入力したユーザーにのみ攻撃オペレーターの出力 ")
+    event.send_message("!solo d      入力したユーザーにのみ防衛オペレーターの出力 ")
+    event.send_message("!random a    ボイスチャンネルにいるユーザー全員の攻撃オペレータの出力 ")
+    event.send_message("!random d    ボイスチャンネルにいるユーザー全員の防衛オペレータの出力 ")
+    event.send_message("!help        コマンド一覧の表示  ")
+    event.send_message("-----------------------------------------------------------------------")
+    event.send_message(" git URL [https://github.com/kaniclub/R6S-ROP.git]  ")    
+    event.send_message("-----------------------------------------------------------------------")
+end
+
 
 
 #!solo 入力した人のみ
