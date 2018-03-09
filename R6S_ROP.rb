@@ -1,7 +1,8 @@
 require 'discordrb'
 require "csv"
 
-bot = Discordrb::Commands::CommandBot.new token: 'NDIxMTcwNjQ0Mjk0ODI4MDM1.DYJVRA.6Y9xVX-7xfUwhh9HRXLNpax4bGc',
+#bot = Discordrb::Commands::CommandBot.new token: 'NDIxMTcwNjQ0Mjk0ODI4MDM1.DYJVRA.6Y9xVX-7xfUwhh9HRXLNpax4bGc',
+bot = Discordrb::Commands::CommandBot.new token: 'NDIxMTcwNjQ0Mjk0ODI4MDM1.DYPy6g.EIOhRJrnkXu2QIpAg4wrSmc4F9Q',
 client_id: 421170644294828035,
 prefix:'!'
 
