@@ -5,11 +5,10 @@ bot = Discordrb::Commands::CommandBot.new token: 'NDIxMTcwNjQ0Mjk0ODI4MDM1.DYJVR
 client_id: 421170644294828035,
 prefix:'!'
 
-#channel = Array.new
-#users = Array.new
 
-#!soro 入力した人のみ
-bot.command :soro do |event,*code|
+
+#!solo 入力した人のみ
+bot.command :solo do |event,*code|
         filename = "OPFILE/" + event.user.name + "_" + code[0] + ".csv"
         data = CSV.read(filename)
         
@@ -40,9 +39,6 @@ bot.command :random do |event,*code|
     
     number = 0
     
-    #data =Array.new()
-    #ran = Array.new()
-
 
     for num in 0..users.length do
 
