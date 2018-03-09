@@ -1,0 +1,1 @@
+worker: bundle exec ruby R6S_ROP.rb
